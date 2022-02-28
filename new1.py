@@ -9,11 +9,10 @@ def second(func):
     return inner
 
 
-# @second
+@second
 def first():
     print('hello')
 
 
-first = second(first)
-
 first()
+
